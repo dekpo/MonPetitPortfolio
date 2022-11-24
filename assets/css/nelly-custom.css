@@ -8,6 +8,10 @@
 
 /*--------- Global -----------*/
 
+.container-fluid{
+    padding: 0;
+}
+
 
 /*--------- Typographie ------*/
 
@@ -21,6 +25,14 @@ p,a{
 
 /*--------- Structure --------*/
 
+span.splitter{
+    display: block;
+    height: 2px;
+    width: 30%;
+    background-color: var(--brun);
+    margin:1em 0;
+}
+
 
 /*--------- Header -----------*/
 
@@ -28,7 +40,23 @@ p,a{
     background-color: var(--brun-fonce);
 }
 
+.bg-beige{
+    background-color: var(--beige-clair);
+}
+
 /*--------- Content ----------*/
+
+
+/*--------- Media ------------*/
+
+.square-rounded{
+    max-width: 400px;
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    aspect-ratio: 1 / 1;
+    border-radius: 200%;
+}
 
 
 /*--------- Footer -----------*/
