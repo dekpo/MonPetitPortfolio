@@ -13,7 +13,9 @@ body{
     flex-wrap: wrap;
     background:/*#010615*/radial-gradient(#111,#000);
 }
-
+a {
+    text-decoration: none;;
+}
 /*glowing text*/
 h1{
     margin:200px;
