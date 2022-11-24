@@ -61,6 +61,7 @@ span.splitter{
 
 .nav-inside .nav-link:hover{
     transform: translateX(10px);
+    color:var(--brun);
 }
 
 /*--------- Content ----------*/
