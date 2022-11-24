@@ -55,6 +55,14 @@ span.splitter{
     background-color: var(--beige-clair);
 }
 
+.nav-inside .nav-link{
+    transition: 0.2s ease-in-out all;
+}
+
+.nav-inside .nav-link:hover{
+    transform: translateX(10px);
+}
+
 /*--------- Content ----------*/
 
 
