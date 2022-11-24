@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background: #649173;
+    background: -webkit-linear-gradient(to right, #649173, #dbd5a4);
+    background: linear-gradient(to right, #649173, #dbd5a4);
+}
+
+.footcontent {
+    display: flex;
+    gap: 2rem;
+}
+
+.footcontent img {
+    width: 50px;
+    height: 50px;
+}
+
+@media only screen and (max-width:600px) {
+    footer {
+        gap: 1rem;
+    }
+
+}
+
+/* .... debut css other..... */
+.big_conteneur {
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+}
+
+.small_conteneur {
+    display: flex;
+    width: 100%;
+    gap: 2em;
+}
+
+.figcontent {
+    width: 100%;
+
+}
+
+.bas_conteneur {
+    display: flex;
+    justify-content: space-around;
+    gap: 0.5em;
+    width: 100%;
+    align-items: center;
+    padding: 2em;
+    height: 40%;
+    background: -webkit-linear-gradient(to right, #add100, #7b920a);
+    background: linear-gradient(to right, #add100, #7b920a);
+}
+
+.bas_content button {
+    padding: 0.4em;
+    background-color: rgb(99, 168, 90);
+    border-radius: .40rem;
+    -webkit-box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    box-shadow: inset 2px 2px 2px 2px #1C6EA4, inset 11px 11px 2px 0px #2285C7, inset 20px 20px 2px 1px #289DEA, inset 29px 29px 2px 1px #57BBEA, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    transition: 500ms ease-in-out;
+}
+
+.bas_content button:hover {
+    box-shadow: 20px 5px 0 black, -20px -5px 0 black;
+}
+
+button:focus {
+    outline: none;
+}
+
+@media screen and (max-width: 900px) {
+    .bas_conteneur {
+        flex-direction: column;
+        height: 100%;
+    }
+}
+
+/* ...fin css other.... */
+
+h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: dodgerblue;
+}
