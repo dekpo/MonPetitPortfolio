@@ -2,6 +2,7 @@
     --beige-clair:#EFE0CF;
     --brun:#9F7F59;
     --brun-fonce:#67321A;
+    --brun-noir:#34302D;
     --big-title:'Secular One', sans-serif;
     --txt-courant:'Montserrat', sans-serif;
 }
@@ -17,10 +18,20 @@
 
 p,a{
   font-family: var(--txt-courant);  
+  color:var(--brun-noir);
+  letter-spacing: -0.08;
 }
 
 .big-title{
     font-family: var(--big-title);
+}
+
+.horse p{
+    padding-left:2em;
+}
+
+.horse h2{
+    color:var(--brun);
 }
 
 /*--------- Structure --------*/
@@ -28,7 +39,7 @@ p,a{
 span.splitter{
     display: block;
     height: 2px;
-    width: 30%;
+    width: 100%;
     background-color: var(--brun);
     margin:1em 0;
 }
@@ -50,14 +61,17 @@ span.splitter{
 /*--------- Media ------------*/
 
 .square-rounded{
-    max-width: 400px;
+    max-width: 800px;
     width: 100%;
-    max-height: 400px;
+    max-height: 800px;
     object-fit: cover;
     aspect-ratio: 1 / 1;
     border-radius: 200%;
 }
 
+.left-position{
+    object-position: left;
+}
 
 /*--------- Footer -----------*/
 
