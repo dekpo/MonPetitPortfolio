@@ -1,0 +1,17 @@
+#logo{
+    width:50px;
+}
+footer{
+    bottom: 0;
+    width: 100%;
+}
+.card-img-top1{
+    height: 30rem;
+}
+h1{
+    display: flex;
+    justify-content: center;
+}
+main{
+    background-color: rgb(215, 215, 216);
+}
