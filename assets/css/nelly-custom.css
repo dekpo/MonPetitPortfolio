@@ -1,3 +1,42 @@
+:root{
+    --beige-clair:#EFE0CF;
+    --brun:#9F7F59;
+    --brun-fonce:#67321A;
+    --big-title:'Secular One', sans-serif;
+    --txt-courant:'Montserrat', sans-serif;
+}
+
+/*--------- Global -----------*/
+
+
+/*--------- Typographie ------*/
+
+p,a{
+  font-family: var(--txt-courant);  
+}
+
+.big-title{
+    font-family: var(--big-title);
+}
+
+/*--------- Structure --------*/
+
+
+/*--------- Header -----------*/
+
+.bg-brun{
+    background-color: var(--brun-fonce);
+}
+
+/*--------- Content ----------*/
+
+
+/*--------- Footer -----------*/
+
+
+
+
+
 #logo{
     width:50px;
 }
