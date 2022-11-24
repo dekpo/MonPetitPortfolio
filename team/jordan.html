@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jordan</title>
+  </head>
+  <body>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+      * {
+        padding: 0;
+        margin: 0;
+      }
+
+      html,
+      body,
+      .body__content {
+        height: 100%;
+        width: 100%;
+        font-family: "Anton", sans-serif;
+        letter-spacing: 3px;
+        background: black;
+      }
+
+      .body__content {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      div {
+        width: 25%;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-grow: 1;
+        background-size: cover;
+        cursor: pointer;
+      }
+
+      div:hover {
+        opacity: 0.5;
+      }
+
+      h1 {
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 2.7rem;
+        -webkit-text-stroke: 1px black; /* width and color */
+      }
+    </style>
+    <section class="body__content"></section>
+
+    <script>
+      const content = document.querySelector(".body__content");
+
+      const roll = () => {
+        content.innerHTML = "";
+        const player = [
+          "jordan",
+          "mohamed",
+          "michel",
+          "dekpo",
+          "gilles",
+          "rayan",
+          "floriant",
+          "alain",
+          "nelly",
+          "patrick",
+          "william",
+          "mika",
+          "jeremy",
+          "quentin",
+          "madiha",
+          "guillaume",
+        ];
+        let lgt = player.length;
+        const imgTab = [
+          "0.jpg",
+          "1.jpg",
+          "2.jpg",
+          "3.jpg",
+          "4.jpg",
+          "5.jpg",
+          "6.jpg",
+          "7.jpg",
+          "8.jpg",
+          "9.jpg",
+          "10.jpg",
+          "11.jpg",
+          "12.jpg",
+          "13.jpg",
+          "14.jpg",
+          "15.jpg",
+          "16.jpg",
+        ];
+
+        for (let i = 0; i < lgt; i++) {
+          let rdmNb = Math.floor(Math.random() * player.length);
+          let rdmImg = Math.floor(Math.random() * imgTab.length);
+
+          let item = document.createElement("div");
+          let h = document.createElement("h1");
+
+          h.textContent = player[rdmNb];
+          item.appendChild(h);
+
+          item.style.backgroundImage = `url(/assets/img/${imgTab[rdmImg]}`;
+          content.appendChild(item);
+
+          player.splice(rdmNb, 1);
+          imgTab.splice(rdmImg, 1);
+        }
+      };
+      roll();
+      document.addEventListener("click", roll);
+    </script>
+  </body>
+</html>
